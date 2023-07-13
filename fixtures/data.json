@@ -1,0 +1,27 @@
+{
+	"salesforce": {
+		"account": {
+			"username": "akshay@8hlpvn6h.mailosaur.net"
+		}
+	},
+	"ajBell": {
+		"account": {
+			"username": "w07osx@8hlpvn6h.mailosaur.net",
+			"password": "Qwerty1234",
+			"newPassword": "Qwerty12345"
+		}
+	},
+	"iapfPension": {
+		"account": {
+			"password": "Sup3rS3cret"
+		}
+	},
+
+	"copf": {
+		"account": {
+			"password": "Qwerty1234"
+		}
+	}
+
+
+}

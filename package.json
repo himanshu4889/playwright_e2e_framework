@@ -1,0 +1,30 @@
+{
+  "name": "raindrop_e2e_tests",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "ajbpf-v2": "cucumber-js --retry 1 --tags '@ajbpf-v2' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "ajBell_signup": "cucumber-js --retry 1 --tags '@ajBellSignup' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "ajBell_login": "cucumber-js --retry 1 --tags '@ajBellLogin' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "sfpfCase": "cucumber-js --retry 1 --tags '@sfpfCase' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "sfCustomer": "cucumber-js --retry 1 --tags '@sfCustomer' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "copf": "cucumber-js --tags '@copf' --require cucumber.js --require step-definitions/copf/*Steps.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "iapf": "cucumber-js --tags '@iapf' --require cucumber.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet",
+    "report": "node reporter.js",
+    "tag": "npm test -- -t"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.2.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.0",
+    "chai": "^4.3.6",
+    "cucumber-html-reporter": "^5.5.0",
+    "mailosaur": "^8.4.1",
+    "playwright": "1.24.2"
+  },
+  "devDependencies": {
+    "dayjs": "^1.11.5",
+    "eslint": "^8.16.0"
+  }
+}
